@@ -1,0 +1,128 @@
+
+
+/**{
+
+	outline: 2px solid red;
+}*/
+.li_color{
+
+	color: #849297;
+	text-decoration:none;
+	margin: 10px;
+
+}
+.li_color:hover{
+
+	color: #e5e3e7;
+	font-weight: 500;
+}
+
+.centrar_texto{
+
+	text-align: center;
+}
+
+.li_pie{
+
+	color: white;
+	text-decoration:none;
+	margin: 10px;	
+}
+
+
+
+/*--------------------------Flash Card----------------------------*/
+
+.fc{
+
+width: 298px;
+display: inline-block;
+margin: 10px;
+
+
+
+}
+.fc button{
+ 
+ margin-left: 15px;
+
+	
+}
+
+.fc button.btn2{
+
+	margin-left: 4px;
+	border: transparent;
+}
+
+.fc h5{
+
+    text-align: left;
+    margin-left: 15px;
+
+
+}
+
+.fc p{
+
+	text-align: left;
+	margin: 15px;
+}
+
+.fc_div2 button{
+
+	border-radius: 5px;
+	padding-top: 0px;
+}
+
+.fc_div2 .btn1{
+
+
+	background-color: #ffc108;
+	border: transparent;
+}
+
+.fc_div2 .btn2{
+
+
+	background-color: #17a2b9;
+	color: white;
+}
+
+.fc_div2 #btn2{
+
+
+	background-color: #dc3546;
+	margin-left: 5px;
+	color: white;
+	border: transparent;
+}
+
+.fc_div2 #btn1{
+
+	background-color: #6c757c;
+	color: white;
+	border: transparent;
+}
+
+
+/*-------------------Bs As - Octubre----------------------*/
+
+@media only screen and (max-width: 800px) {
+  
+.BsAs_div1{
+	
+	
+	
+	display:none;
+  }
+
+#bsas{
+ 
+text-align: center;
+
+
+}
+}
+
+

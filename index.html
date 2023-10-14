@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TP Integrador</title>
+	<meta charset="utf-8" />
+	<!--Css-->
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<!--Bootstrap Css-->
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+
+
+</head>
+<body>
+
+	
+
+	<!-------------------Barra de navegación-------------------------->
+	<nav class="navbar navbar-expand-lg" style="background-color: #343a40" >
+	  <div class="container-fluid">
+	    <a class="navbar-brand" href="https://buenosaires.gob.ar/educacion/codo-codo-40" style="margin-left: 50px; margin-right: 5px"><img src="codoacodo.png" width="100px" ></a>
+	    <p style="color: white; "><strong>Conf Bs As</strong></p>
+
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+	      <ul class="navbar-nav ms-auto  mb-lg-0" style="margin-right: 50px ">
+	        <li class="nav-item"   >
+	          <a class="li_color" aria-current="page" href="#" >La conferencia</a>
+	          
+	        </li>
+	        <li class="nav-item">
+	          <a class="li_color"  href="#" >Los oradores</a>
+	        </li>
+	        <li class="nav-item dropdown">
+			  <a class="li_color"  href="#">El lugar y la fecha</a>	        
+	        </li>
+	        <li class="nav-item dropdown">
+			  <a class="li_color"  href="#">Conviértete en orador</a>	        
+	        </li>	        
+	        <li class="nav-item dropdown">
+			  <a class="li_color" style="color: #2c6b3e" href="#"><strong>Comprar tickets</strong></a>	        
+	        </li>
+	      </ul>
+	      
+	    </div>
+	  </div>
+	</nav>
+
+    
+
+
+    <!-----------------Carrousel ---------------------->
+     <div id="carouselSlidesOnly" class="carousel slide position-relative d-flex align-items-center justify-content-end" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="ba1.jpg" class="d-block w-100 opacidad" alt="Buenos Aires 1" style="filter: brightness(0.5)">
+        </div>
+     
+      </div>
+      <div class="position-absolute text-end col-md-6 col-12 text-light px-5">
+        <div class="d-none d-md-block pt-5 mt-5">
+          <h1>
+            Conf Bs As
+          </h1>
+          <p>
+            <strong>Bs As llega por primera vez a Argentina. Un evento para compartir con
+            nuestra comunidad el conocimiento y experiencia de los expertos que
+            están creando el futuro de Internet. Ven a conocer a miembros del
+            evento, a otros estudiantes de Codo a Codo y los oradores de primer
+            nivel que tenemos para ti. ¡Te esperamos!</strong> 
+          </p>
+        </div>
+
+
+        <div class="pt-1 d-grid gap-2 d-md-block" ">
+          <button type="button"  style="background-color: transparent; border: 1px solid white; color: white; border-radius: 5px; padding: 4px; margin-right: 5px;">Quiero ser orador</button>
+          <button type="button" class="btn text-light" style="background-color: #29a744;">Comprar tickets</button>
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!--------------------Conoce a los oradores------------------>
+    <h5 style="text-align: center; margin-top: 15px;"> CONOCE A LOS</h5>
+    <h1 style="text-align: center; margin-bottom: 0px;">ORADORES</h1>
+
+
+
+
+    
+    <!----------------Flash Card--------------------->
+	<div  style=" text-align: center; margin-bottom: 30px;">
+
+	  <div  class="fc" >
+	    <img src="steve.jpg"  width="100%" height="298px" >
+	    <div class="fc_div2"  >
+	    	<div style="width: 100%; text-align: left; margin-top: 20px;"> 
+	    		<button class="btn1"><strong>Javascript</strong></button>
+	    		<button class="btn2"><strong>React</strong></button>
+
+	        </div>      
+		        <h5  >Steve Jobs</h5>
+		        <p class="card-text" >
+		      	Lorem ipsum dolor sit amet, consectetur adipiscing elit. et voluptatibus 
+		        perferendis deleniti. totam fuga sequi iste! Facilis explicabo repellat 
+		        ut similique indidunt? Ullam nobis beatae, corporis facilis veniam
+		       magni ratione!	
+	     </div>
+	   
+	  </div>
+
+
+	  <div  class="fc">
+	    <img src="bill.jpg"  width="100%" >
+	    <div class="fc_div2"  >
+	    	<div style="width: 100%; text-align: left; margin-top: 20px;"> 
+	    		<button class="btn1"><strong>Javascript</strong></button>
+	    		<button class="btn2" ><strong>React</strong></button>
+
+	        </div>      
+		        <h5  >Bill Gates</h5>
+		        <p class="card-text" >
+		      	Lorem ipsum dolor sit amet, consectetur adipiscing elit. et voluptatibus 
+		        perferendis deleniti. totam fuga sequi iste! Facilis explicabo repellat 
+		        ut similique indidunt? Ullam nobis beatae, corporis facilis veniam
+		       magni ratione!	
+	     </div>
+	   
+	  </div>
+
+
+	  <div  class="fc">
+	    <img src="ada.jpeg"  width="100%" >
+	    <div class="fc_div2"  >
+	    	<div style="width: 100%; text-align: left; margin-top: 20px;"> 
+	    		<button id="btn1"><strong>Negocios</strong></button>
+	    		<button id="btn2" ><strong>Startups</strong></button>
+
+	        </div>      
+		        <h5  >Ada Lovelace</h5>
+		        <p class="card-text" >
+		      	Lorem ipsum dolor sit amet, consectetur adipiscing elit. et voluptatibus 
+		        perferendis deleniti. totam fuga sequi iste! Facilis explicabo repellat 
+		        ut similique indidunt? Ullam nobis beatae, corporis facilis veniam
+		       magni ratione!	
+	     </div>
+	   
+	  </div>	  	  	  
+
+		
+
+		  
+
+     </div>
+	<!-------------------Bs As - Octubre---------------------->
+	<div style="display: flex; justify-content: center;  background-color: #353a40"  id="bsas">
+	      <div style="overflow:hidden; width: 50%;   box-sizing: border-box;" class="BsAs_div1">
+	   
+	      <img src="honolulu.jpg"  alt="..." width="100%"  >
+	   
+	      </div>
+	  <div  style="background-color: transparent; width: 50%;   overflow:hidden ; padding: 25px; box-sizing: border-box;" class="BsAs_div">
+	    
+	    
+	        <h5  style="background-color: transparent; color: white; margin: 5px;">Bs AS - Octubre</h5>
+	        <p style="color: white; margin: 5px;">
+	        Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu es la
+	        más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa
+	        sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad(
+	        aproximadamente 600 km² de superficie).
+	        </p>
+	        <button type="button" style="background-color: #353a40; border-radius: 5px; border: 1px solid white; color: white; padding: 4px;">Conocé más</button>	    	    	    
+	  </div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!--------------------Formulario--------------------->
+	<div>
+		<h6 class="centrar_texto" style="margin-top: 30px;">CONVIÉRTETE EN UN ORADOR</h6>
+		<h1 class="centrar_texto"><strong>ORADOR</strong></h1>
+		<h6 class="centrar_texto">Anotate como orador para dar una charla ignite. Cuéntanos de que quieres hablar!</h6>
+	</div>
+
+
+	<div class="row" style="width:60%; margin: auto auto;">
+	  <div class="col" style="margin-bottom: 15px;">
+	    <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+	  </div>
+	  <div class="col">
+	    <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+	  </div>
+	  <div class="form-floating">
+		  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+		  <label for="floatingTextarea2" style="text-indent: 15px;">Sobre que querés hablar?</label>
+	  </div>
+	  <p>Recuerda incluir un título para tu charla</p>	
+	  <div class="d-grid gap-2"  style="margin-bottom: 15px;">
+		  <button class="btn" type="button" style="background-color: #96c93e;">Enviar</button>
+   	  </div>	    
+	</div>
+
+
+	<!----------------Pie de página-------------------------->
+	<ul class="nav justify-content-center" style="background-color: #1e5170; padding: 20px;">
+	
+	  <li class="nav-item" >
+	    <div><a class="li_pie" href="#">Preguntas frecuentes</a>
+	    </div>	
+	  </li>
+	  <li class="nav-item">
+	    <a class="li_pie" href="#">Contáctanos</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="li_pie" href="#">Prensa</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="li_pie" href="#">Conferencias</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="li_pie" href="#">Términos y condiciones</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="li_pie" href="#">Privacidad</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="li_pie" href="#">Estudiantes</a>
+	  </li>	  	  	  	  	  
+	
+	</ul>
+
+	<!----------------------------------------------------------------->
+
+	
+
+  <!--Bootstrap Javascript -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
