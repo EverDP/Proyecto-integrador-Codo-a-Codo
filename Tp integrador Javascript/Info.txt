@@ -1,0 +1,2 @@
+¿Cómo incrustar una imagen dentro de los checkbox?
+https://es.stackoverflow.com/questions/42212/c%C3%B3mo-incrustar-una-imagen-dentro-de-los-checkbox

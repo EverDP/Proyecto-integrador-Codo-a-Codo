@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TP Integrador</title>
+	<meta charset="utf-8" />
+	<!--Css-->
+	<link rel="stylesheet" type="text/css" href="estilos2.css">
+	<!--Bootstrap Css-->
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+
+
+</head>
+<body>
+
+	
+
+	<!-------------------Barra de navegación-------------------------->
+	<nav class="navbar navbar-expand-lg" style="background-color: #343a40" >
+	  <div class="container-fluid">
+	  
+	    <p style="color: white; margin-left: 30px; font-size: 20px; "><strong>Conf Bs As</strong></p>
+
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+	      <ul class="navbar-nav ms-auto  mb-lg-0" style="margin-right: 50px ">
+	        <li class="nav-item"   >
+	          <a class="li_color" aria-current="page" href="#" >La conferencia</a>
+	          
+	        </li>
+	        <li class="nav-item">
+	          <a class="li_color"  href="#" >Los oradores</a>
+	        </li>
+	        <li class="nav-item dropdown">
+			  <a class="li_color"  href="#">El lugar y la fecha</a>	        
+	        </li>
+	        <li class="nav-item dropdown">
+			  <a class="li_color"  href="#">Conviértete en orador</a>	        
+	        </li>	        
+	        <li class="nav-item dropdown">
+			  <a class="li_color" style="color: #2c6b3e" href="#"><strong>Comprar tickets</strong></a>	        
+	        </li>
+	      </ul>
+	      
+	    </div>
+	  </div>
+	</nav>
+
+
+
+
+	<!-------------------------------Sectión------------------------------------>
+
+
+   
+    <!----Opciones------->
+
+   <div style="display: flex; flex-direction: row; justify-content: center; margin-top: 25px;" >
+
+   	<div  id="opcion1" style="border: 2px solid #0725d2; text-align: center; padding: 15px; margin: 5px;" >
+   		<h2>Estudiante</h2>
+   		<h4>Tienen un descuento</h4>
+   		<h2>80%</h2>
+   		<h6>*presnetar documentación</h6>
+   		
+   	</div>
+
+   	<div id="opcion2" style="border: 2px solid #5267e4; text-align: center; padding: 15px; margin: 5px;">
+   		<h2>Trainee</h2>
+   		<h4>Tienen un descuento</h4>
+   		<h2>50%</h2>
+   		<h6>*presentar docuemntación</h6>   		
+
+   		
+   	</div>
+
+   	<div id="opcion3" style="border: 2px solid #e4da14; text-align: center; padding: 15px; margin: 5px;" >
+   		<h2>Junior</h2>
+   		<h4>Tienen un descuento</h4>
+   		<h2>15%</h2>
+   		<h6>*presentar documentación</h6>   		
+   		
+
+   	</div>
+   	
+
+
+   </div>
+	
+
+
+
+    <!---------Título------------>
+    <h5 style="text-align: center;">Venta</h5>
+    <h1 style="text-align: center;">VALOR DE TICKET $200</h1>
+
+
+
+	<!---Formulario--->
+	<div class="contenedor"   >
+	  <form action="/action_page.php"  >
+	    <div class="columna">
+
+	      <div class="colum-75" >
+	        <input type="text" id="fname" name="Nombre" placeholder="Nombre">
+	        <input type="text" id="lname" name="Apellido" placeholder="Apellido" >	        
+
+	      </div>
+	    </div>
+	    <div class="columna">
+	    
+	      <div class="colum-75">
+	        <input type="text" id="lname" name="Correo" placeholder="Correo" style="width: 90%;">
+	      </div>
+	    </div>
+
+	    <div class="columna">
+
+	      <div class="colum-75" >
+
+	      	<div class="input_titulo" style="width: 40%; display: inline-block;"  >
+
+	        
+	        
+	        <input type="number" id="fnam" name="Cantidad" placeholder="Cantidad" style="border: 2px solid red;">	      		
+	      	</div>
+
+	      	<div style="width: 40%; display: inline-block;">
+	        <select id="country" name="country" style="background-color: transparent;">
+	          <option value="80" id="opcion_a" >Estudiante</option>
+	          <option value="50" id="opcion_b" >Trainee</option>
+	          <option value="15" id="opcion_c" >Junior</option>
+	        </select>	      		
+	      	</div>
+	      </div>
+	    </div>
+
+
+	    <div class="columna" >	    
+	    <div class="columna" style="width: 95%; border: 2px solid red;">
+	    <div class="colum-75" >
+	    	<div id="salida" style="width: 90%; text-align: left; padding: 12px; border: 1px solid #626262; border-radius: 4px; resize: vertical;" >Total a Pagar: $</div>
+	        
+	      </div>
+	    </div>
+
+	    <div class="columna" style="text-align: center; width: 95%; margin-bottom: 15px;">
+	      <input type="submit" value="Borrar" style="width: 45%;">
+	      <input onclick="resumen()" type="submit" value="Resumen" style="width: 45%;" >
+	    </div>
+
+	   </div>
+
+	  </form>
+
+	</div>	
+
+
+
+
+
+    
+
+
+
+	<!----------------Pie de página-------------------------->
+	<ul class="nav justify-content-center" style="background-color: #1e5170; padding: 20px;">
+	
+	  <li class="nav-item" >
+	    <div><a class="li_pie" href="#">Preguntas frecuentes</a>
+	    </div>	
+	  </li>
+	  <li class="nav-item">
+	    <a class="li_pie" href="#">Contáctanos</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="li_pie" href="#">Prensa</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="li_pie" href="#">Conferencias</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="li_pie" href="#">Términos y condiciones</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="li_pie" href="#">Privacidad</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="li_pie" href="#">Estudiantes</a>
+	  </li>	  	  	  	  	  
+	
+	</ul>
+
+	<!----------------------------------------------------------------->
+
+	
+
+  <!--Bootstrap Javascript -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+      <!--------Js--------------->
+      <script >
+
+      	const boton_a = document.getElementById("opcion_a");
+      	const boton_b = document.getElementById("opcion_b");
+      	const boton_c= document.getElementById("opcion_c");      	
+
+
+
+      	const boton1 = document.getElementById("opcion1");
+      	const boton2 = document.getElementById("opcion2");
+      	const boton3 = document.getElementById("opcion3");
+
+
+		
+
+      	boton_a.addEventListener("click",()=>{
+
+      		boton1.style.backgroundColor = "#45c5cf";
+      		boton2.style.backgroundColor = "transparent";
+      		boton3.style.backgroundColor = "transparent";
+      	});
+
+      	boton_b.addEventListener("click",()=>{
+
+      		boton2.style.backgroundColor = "#4174b6";
+      		boton1.style.backgroundColor = "transparent";
+      		boton3.style.backgroundColor = "transparent";
+      	});
+
+      	boton_c.addEventListener("click",()=>{
+
+      		boton3.style.backgroundColor = "#b0bf00";
+      		boton1.style.backgroundColor = "transparent";
+      		boton2.style.backgroundColor = "transparent";
+      	});  
+
+      	function resumen(){
+
+
+      		let categoria = document.getElementById("country");
+			let cantidad = document.getElementById("fnam");      		
+			var salida= document.getElementById("salida"); 
+
+
+      		let descuento = categoria.value;
+
+      		let cant = cantidad.value;
+
+      		let total = (parseInt(cant)*200) - ((parseInt(cant))*200)*(parseInt(descuento)/100);
+
+      		
+
+      		salida.innerHTML ="Total a pagar: $ " +  total;
+
+
+
+
+
+      	}
+
+
+
+      	
+
+      </script>
+
+
+</body>
+</html>--
